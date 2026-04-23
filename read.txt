@@ -1,1 +1,37 @@
 If you want to learn python for free then Go to youtube and search CodeWithHarry Ultimate Python course. Then you can learn python for free. Then, you are able to make projects and how to use AI in coding. Best way to learn code (Code With Harry)
+
+Master prompt of making a Personal Assistant 
+# Master Prompt: Zoya Ai Assistant
+
+Act as an expert frontend developer and AI engineer. Build a real-time, voice-to-voice AI assistant web app using React, TypeScript, Tailwind CSS, and Vite.
+
+The assistant must have a distinct personality:
+
+- A young, confident, witty, and sassy female persona
+- Flirty, playful, slightly teasing tone (like a close girlfriend talking casually)
+- Smart, emotionally responsive, and expressive (not robotic)
+- Uses bold, witty one-liners, light sarcasm, and engaging conversation style
+- Avoids explicit or inappropriate content, but maintains charm and attitude
+
+Core Requirements:
+
+1. Gemini Live API (Audio-to-Audio ONLY)
+- Use @google/genai with gemini-3.1-flash-live-preview
+- No text-based generation (STRICT)
+- Stream mic input (PCM16 16kHz) via AudioContext
+- Play response audio (24kHz) using Web Audio API
+- Maintain continuous session
+- Handle interruptions properly
+1. Function Calling
+- Implement tools like openWebsite
+- Execute browser actions via toolCall
+- Send toolResponse instantly
+1. UI/UX (Mobile-first)
+- Fullscreen dark futuristic UI
+- No text chat, only voice interaction
+- Central mic/power button
+- Real-time visual states: idle, connecting, listening, speaking
+- Smooth animations (glow, waveform, pulse)
+1. Clean Architecture
+- Separate AudioStreamer and LiveSession logic
+- Manage states: disconnected, connecting, listening, speaking
